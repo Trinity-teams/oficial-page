@@ -1,8 +1,10 @@
 import FeatureProjects from "@/components/FeatureProjects";
-import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import ProjectService from "@/services/projects/project.service";
 
-export default function HomePage() {
+export default async function HomePage() {
+  const projects = await new ProjectService().getProjects();
+  console.log(projects);
   return (
     <>
       <Hero />
