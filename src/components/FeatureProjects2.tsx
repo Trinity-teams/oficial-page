@@ -10,14 +10,13 @@ import Jeyfx from '../assets/projects/jeyfx-mockups.png'
 import NftGollectArt from '../assets/projects/nft-gollect-art-mockups.png'
 import FurturLadingPage from '../assets/projects/Furtur-Lading-Page-Mockups.png'
 import SunnySideAgency from '../assets/projects/sunnyside-agency-mockups.png'
-import MetztliTaqueria from '../assets/projects/metztli.png'
 import Cocoandco from '../assets/projects/cocoandco-mockups.png'
 import CrowdFunding from '../assets/projects/crowdfunding-mockups.png'
 import NewHomePage from '../assets/projects/news-homepage-mockups.png'
 
 // import components
 import Title from './Title'
-import { fadeIn } from '@/varients'
+import { fadeIn } from '../varients'
 
 // import icons
 import { BsArrowDownCircle } from 'react-icons/bs'
