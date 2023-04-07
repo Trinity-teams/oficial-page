@@ -12,13 +12,18 @@ import { fadeIn } from "../varients";
 import { BsArrowDownCircle } from "react-icons/bs";
 import { Tilt } from "react-tilt";
 import { IProject } from "@/interfaces/project.interface";
-import { urlFor } from "@/config/sanity-client";
+import { useNextSanityImage } from "next-sanity-image";
+import { sanityClient } from "@/config/sanity-client";
+import { SanityImage } from "./SanityImage";
 
 type Props = {
   projects: IProject[];
 };
 
 const FeatureProjects2: React.FC<Props> = ({ projects }) => {
+  //hooks
+  const t = useNextSanityImage(sanityClient as any, projects[0].image);
+
   return (
     <section className="container max-w-4xl">
       <div className="flex gap-x-4 items-center">
@@ -55,12 +60,7 @@ const FeatureProjects2: React.FC<Props> = ({ projects }) => {
                     viewport={{ once: false, amount: 0 }}
                     className="h-[400px] w-[400px]"
                   >
-                    <Image
-                      src={urlFor(project.image).url()}
-                      alt={project.title}
-                      width={1000}
-                      height={1000}
-                    />
+                    <SanityImage image={project.image} />
                   </motion.div>
                   <div className="flex absolute left-10 top-10 md:top-auto flex-col justify-start  md:justify-center h-full">
                     <div className="duration-500 text-white p-2 rounded-md flex flex-col gap-y-5">
