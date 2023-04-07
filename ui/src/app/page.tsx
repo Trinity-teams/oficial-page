@@ -1,4 +1,4 @@
-import FeatureProjects from "@/components/FeatureProjects";
+import FeatureProjects2 from "@/components/FeatureProjects2";
 import Hero from "@/components/Hero";
 import ProjectService from "@/services/projects/project.service";
 
@@ -8,7 +8,7 @@ export default async function HomePage() {
   return (
     <>
       <Hero />
-      <FeatureProjects />
+      <FeatureProjects2 />
     </>
   );
 }

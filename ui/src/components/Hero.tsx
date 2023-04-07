@@ -1,10 +1,11 @@
 "use client"
 import React from 'react'
 import { motion } from 'framer-motion'
-import Image from 'next/image'
-import HeroImage from '../assets/hero-image-2.png'
 
 const Hero = () => {
+  let a = 2
+  let b = 2
+  console.log(a * b)
   return (
     <section className='container text-dark h-[90vh] flex flex-col md:flex-row items-center gap-10 justify-center md:justify-between'>
       <div className='flex flex-col md:justify-center  '>
@@ -32,11 +33,6 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, ease: 'easeOut' }}
       >
-        <Image
-          src={HeroImage}
-          alt='hero image'
-          className='object-contain rounded-xl md:w-[80%]'
-        />
       </motion.div>
     </section>
   )

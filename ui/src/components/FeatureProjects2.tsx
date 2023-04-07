@@ -13,6 +13,7 @@ import SunnySideAgency from '../assets/projects/sunnyside-agency-mockups.png'
 import Cocoandco from '../assets/projects/cocoandco-mockups.png'
 import CrowdFunding from '../assets/projects/crowdfunding-mockups.png'
 import NewHomePage from '../assets/projects/news-homepage-mockups.png'
+import BurguerCar from '../assets/projects/burguercar-mockups.png'
 
 // import components
 import Title from './Title'
@@ -30,7 +31,7 @@ const FeatureProjects2 = () => {
       name: 'Tensei',
       image: Tensei,
       tecnologies: ['React', 'Next', 'Tailwind', 'Typescript'],
-      link: 'https://tensei.vercel.app/',
+      link: 'https://tensei-web.vercel.app/',
       bgColor: '#341e43',
     },
     {
@@ -89,6 +90,14 @@ const FeatureProjects2 = () => {
       link: 'https://new-home-page.vercel.app/',
       bgColor: '#00011a',
     },
+    {
+      id: 9,
+      name: ' Burguer Car',
+      image: BurguerCar,
+      tecnologies: ['HTML', 'SASS', 'Bootstrap', 'Javascript'],
+      link: 'https://burguercar.vercel.app/',
+      bgColor: '#29404a',
+    }
   ]
   return (
     <section className='container max-w-4xl'>
