@@ -37,43 +37,39 @@ const MobileNav = () => {
             duration: 0.2,
           },
         }}
-        className={` ${
-          isOpen ? "bg-white" : "bg-dark"
-        } grid group place-content-center z-50 relative  w-[50px] h-[50px]  text-white text-3xl hover:bg-primary cursor-pointer `}
+        className={` ${isOpen ? "bg-white" : "bg-dark"
+          } grid group place-content-center z-50 relative  w-[50px] h-[50px]  text-white text-3xl hover:bg-primary cursor-pointer `}
       >
         <div className="flex flex-col gap-y-[5px] items-end ">
           <span
-            className={`${
-              isOpen
+            className={`${isOpen
                 ? "-rotate-45 h-[3px] w-[22px] translate-y-[6.4px] bg-dark group-hover:bg-white"
                 : "h-[3px] w-[19px] rotate-0 bg-white"
-            } flex transition-transform duration-150`}
+              } flex transition-transform duration-150`}
           />
           <span
-            className={`${
-              isOpen
+            className={`${isOpen
                 ? "w-[0] h-[0] bg-dark group-hover:bg-white"
                 : "h-[3px] w-[25px] rotate-0 bg-white"
-            } flex transition-transform duration-150`}
+              } flex transition-transform duration-150`}
           />
           <span
-            className={`${
-              isOpen
+            className={`${isOpen
                 ? " rotate-45 h-[3px] w-[22px] -translate-y-[6.4px] bg-dark group-hover:bg-white"
                 : "h-[3px] w-[15px] rotate-0 bg-white"
-            } flex transition-transform duration-150`}
+              } flex transition-transform duration-150`}
           />
         </div>
       </motion.div>
       <div
-        className={`${
-          isOpen ? "flex z-40 flex-col justify-between w-[500px]" : "w-[0px]"
-        } overflow-hidden transition-all duration-300  -z-10 h-screen bg-dark absolute top-0 right-0`}
+        className={`${isOpen ? "flex z-40 flex-col justify-between w-[500px]" : "w-[0px]"
+          } overflow-hidden transition-all duration-300  -z-10 h-screen bg-dark absolute top-0 right-0`}
       >
         <ul className="flex  flex-col  text-center gap-y-16 text-3xl font-normal mt-20">
           {NavItems.map((item, index) => {
             return (
               <Link
+                onClick={() => setIsOpen(!isOpen)}
                 href={item.link}
                 key={index}
                 className={`
