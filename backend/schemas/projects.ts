@@ -17,7 +17,7 @@ export default {
       name: 'tags',
       title: 'Tags',
       type: 'array',
-      of: [{type: 'string'}],
+      of: [{ type: 'string' }],
     },
     {
       name: 'route',
@@ -28,6 +28,16 @@ export default {
       name: 'image',
       title: 'Image',
       type: 'image',
+    },
+    {
+      name: 'description',
+      title: 'Description',
+      type: 'text',
+    },
+    {
+      name: 'bgColor',
+      title: 'bgColor',
+      type: 'string',
     },
   ],
 }

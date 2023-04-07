@@ -5,28 +5,37 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Title from '@/components/Title'
 
+import OrbisImage from '@/assets/team/orbis.png'
+import KelfryImage from '@/assets/team/kelfry.png'
+import PeterImage from '@/assets/team/peter.png'
+import CarlosImage from '@/assets/team/carlitos.png'
+
 const About = () => {
     const Teams = [
         {
             name: 'Peter Ramirez',
             position: 'UI/UX Designer',
-            github: 'peterramirez18'
+            github: 'peterramirez18',
+            image: PeterImage
         },
         {
             name: 'Orbis Alonzo',
             position: 'Full Stack Developer',
-            github: 'orbis25'
+            github: 'orbis25',
+            image: OrbisImage
         },
         {
             name: 'Kelfry Florimon',
             position: 'Data Analyst',
-            github: 'kelfry98'
+            github: 'kelfry98',
+            image: KelfryImage
 
         },
         {
             name: 'Carlos Montero',
             position: 'Fronted Developer',
-            github: 'carlos-04'
+            github: 'carlos-04',
+            image: CarlosImage
         }
     ]
     return (
