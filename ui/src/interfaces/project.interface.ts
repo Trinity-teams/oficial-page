@@ -5,4 +5,6 @@ export interface IProject {
   route: string;
   tags: string[];
   image: any;
+  bgColor: string;
+  description: string;
 }
