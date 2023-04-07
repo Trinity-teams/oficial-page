@@ -3,12 +3,14 @@ import Hero from "@/components/Hero";
 import ProjectService from "@/services/projects/project.service";
 
 export default async function HomePage() {
+  //projects
   const projects = await new ProjectService().getProjects();
-  console.log(projects);
   return (
     <>
       <Hero />
-      <FeatureProjects2 />
+      <FeatureProjects2
+        projects={projects}
+      />
     </>
   );
 }

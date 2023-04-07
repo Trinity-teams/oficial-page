@@ -8,7 +8,9 @@ const projectQuery = `
         date,
         route,
         tags,
-        image
+        image,
+        description,
+        bgColor
     }
 `;
 
